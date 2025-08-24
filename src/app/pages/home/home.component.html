@@ -1,0 +1,70 @@
+<section class="home d-flex flex-column flex-md-row align-items-center justify-content-center" >
+
+  <div class="home-text text-center text-md-start" appAnimateOnScroll>
+    <h1 class="display-4 gradient-title mb-3">¡Hola! Soy Gema</h1>
+    <p class="fs-5 mb-4 text-light">Desarrolladora Web | Full-Stack</p>
+    <a routerLink="/projects" class="btn btn-primary btn-lg">Mis proyectos</a>
+
+    <div class="mt-4 social-icons">
+      <a href="https://github.com/gemarubi/gemarubi" target="_blank" class="me-3 github-icon" appAnimateOnScroll>
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/github.svg" width="32" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/gema-rubio-sanchez/" target="_blank" appAnimateOnScroll>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="32" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+
+  <div class="home-photo ms-md-5" appAnimateOnScroll>
+    <img src="mi-foto.jpg" alt="Foto de Gema" class="rounded-circle shadow">
+  </div>
+
+</section>
+
+<!-- Skills Section -->
+<section class="skills py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Título ocupa 20% -->
+      <div class="col-12 col-md-5 d-flex align-items-center me-2" appAnimateOnScroll>
+        <h2 class="stack-main-title">Stack Tecnológico</h2>
+      </div>
+
+      <!-- Contenido de tecnologías ocupa 80% -->
+      <div class="col-12 col-md-6 ms-2 ">
+        <!-- Front-end -->
+        <div class="stack-section mb-4">
+          <h3 class="stack-title" appAnimateOnScroll>Front-end</h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div *ngFor="let tech of front" class="text-center" appAnimateOnScroll>
+              <img [src]="tech.img" [alt]="tech.name" class="img-fluid" style="width:50px;height:50px;">
+              <p class="mb-0">{{ tech.name }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back-end -->
+        <div class="stack-section mb-4">
+          <h3 class="stack-title" appAnimateOnScroll>Back-end</h3>
+          <div class="d-flex flex-wrap gap-3">
+            <div *ngFor="let tech of back" class="text-center" appAnimateOnScroll>
+              <img [src]="tech.img" [alt]="tech.name" class="img-fluid" style="width:50px;height:50px;">
+              <p class="mb-0">{{ tech.name }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="stack-section mb-4">
+          <h3 class="stack-title" appAnimateOnScroll>Herramientas & Otras tecnologías</h3>
+          <div class="d-flex flex-wrap gap-3">
+            <div *ngFor="let tech of tools" class="text-center" appAnimateOnScroll>
+              <img [src]="tech.img" [alt]="tech.name" class="img-fluid" style="width:50px;height:50px;">
+              <p class="mb-0">{{ tech.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<section class="projects py-5">
+  <div class="container">
+    <h2 class="text-center gradient-title mb-5">Mis Proyectos</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-sm-6 col-md-6" *ngFor="let project of projects">
+        <div class="project-card h-100 shadow-lg">
+          <div class="project-img-wrapper mb-3">
+            <a [href]="project.link" target="_blank">
+              <img [src]="project.image" [alt]="project.name" class="img-fluid project-img">
+            </a>
+
+          </div>
+          <div class="project-body p-3 text-center">
+            <h5 class="p-3">{{ project.name }}</h5>
+            <p>{{ project.description }}</p>
+            <div class="tech-tags mb-3 d-flex justify-content-center gap-2 bg-dark p-2 rounded">
+              <img *ngFor="let t of project.tech" [src]="t.img" [alt]="t.name" [attr.title]="t.name" class="tech-icon">
+            </div>
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/github.svg" width="32" alt="GitHub">
+          </div>
+       <!-- <button
+  class="btn btn-primary mt-2"
+  (click)="verDetalle(project)">
+  Ver Detalle
+</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

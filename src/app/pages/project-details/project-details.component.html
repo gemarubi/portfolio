@@ -1,0 +1,5 @@
+<div class="container py-5" *ngIf="project">
+  <h2>{{ project.name }}</h2>
+  <img [src]="project.image" class="img-fluid mb-3" alt="{{ project.name }}">
+  <p>{{ project.description }}</p>
+</div>
