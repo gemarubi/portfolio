@@ -16,8 +16,8 @@ export class ProjectsComponent {
 
       description: 'Mi portfolio web desarrollado con Angular y Bootstrap.',
       image: 'mi-portfolio-img.png',
-      link: 'https://tu-portfolio.com',
-      github: 'https://github.com/tuusuario/portfolio',
+      link: 'https://miportfoliopersonal.netlify.app/',
+      github: 'https://github.com/gemarubi/portfolio',
        tech: [
         { name: 'Angular', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
            { name: 'Bootstrap', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
@@ -43,8 +43,8 @@ export class ProjectsComponent {
       name: 'Calidad CIFP Virgen de gracia',
       description: 'Calidad es una plataforma web para la gestión documental del departamento de calidad. Automatiza el rellenado de formularios PDF con datos de usuario, incorpora un sistema de eventos en el dashboard personal y permite a los responsables monitorizar en tiempo real el cumplimiento de las tareas y procesos de calidad.',
       image: 'calidad-virgendegracia-img.png',
-      link: 'https://proyecto-ecoexperience-tfg.netlify.app/',
-      github: 'https://github.com/gemarubi/ecoexperienceTFG',
+      link: 'https://miportfoliopersonal.netlify.app/',
+      github: 'https://github.com/Migueleonfer27/calidad-virgen-de-gracia',
       tech: [
         { name: 'Angular', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
            { name: 'Bootstrap', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
@@ -57,8 +57,8 @@ export class ProjectsComponent {
       name: 'Hogwarts',
       description: 'Hogwarts es una plataforma web inspirada en el universo de Harry Potter que permite gestionar usuarios con roles y permisos, asignaturas y hechizos. Además, incluye un sistema de duelos interactivos donde los usuarios pueden enfrentarse con sus propios hechizos en un pequeño juego de magia.',
       image: 'hogwarts-img.png',
-      link: 'https://proyecto-ecoexperience-tfg.netlify.app/',
-      github: 'https://github.com/gemarubi/ecoexperienceTFG',
+      link: 'https://miportfoliopersonal.netlify.app/',
+      github: 'https://github.com/gemarubi/gemarubi',
       tech: [
          { name: 'JavaScript', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
            { name: 'Bootstrap', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
