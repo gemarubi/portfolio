@@ -1,1 +1,17 @@
-<p>contact works!</p>
+<div class="contact-card vh-100 ">
+  <div class="card-header mt-4">
+    <h2>{{ name }}</h2>
+    <h4>{{ title }}</h4>
+  </div>
+
+  <div class="card-body">
+    <ul>
+      <li *ngFor="let contact of contactInfo">
+        <a [href]="contact.link" target="_blank">
+          <span class="icon">{{ contact.icon }}</span>
+          <span class="info">{{ contact.value }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
